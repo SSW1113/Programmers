@@ -5,18 +5,10 @@ function solution(a, b) {
         switch(i){
             case 1:
                 break;
-            case 2:
-            case 4:
-            case 6:
-            case 8:
-            case 9:
-            case 11:
+            case 2: case 4: case 6: case 8: case 9: case 11:
                 b += 31;
                 break;
-            case 5:
-            case 7:
-            case 10:
-            case 12:
+            case 5: case 7: case 10: case 12:
                 b += 30;
                 break;
             case 3:
