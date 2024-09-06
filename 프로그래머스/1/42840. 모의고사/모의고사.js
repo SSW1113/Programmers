@@ -9,33 +9,21 @@ function solution(answers) {
     let grade3 = 0;
     
     for(let i=0; i<answers.length; i++){
-        if(answers[i] === no1[i%5]){
+        if(answers[i] === no1[i%no1.length])
             grade1++;
-        }
-    }
-    
-    for(let i=0; i<answers.length; i++){
-        if(answers[i] === no2[i%8]){
+        if(answers[i] === no2[i%no2.length])
             grade2++;
-        }
-    }
-    
-    for(let i=0; i<answers.length; i++){
-        if(answers[i] === no3[i%10]){
+        if(answers[i] === no3[i%no3.length])
             grade3++;
-        }
     }
     
     let maxGrade = Math.max(grade1, grade2, grade3);
-    if(maxGrade === grade1){
+    if(maxGrade === grade1)
         answer.push(1);
-    }
-    if(maxGrade === grade2){
+    if(maxGrade === grade2)
         answer.push(2);
-    }
-    if(maxGrade === grade3){
+    if(maxGrade === grade3)
         answer.push(3);
-    }
     
     return answer;
 }
